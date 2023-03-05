@@ -50,7 +50,6 @@ h3 {
 .card {
   width: 1000px;
   width: 60%;
-  min-height: 45%;
   border-radius: 15px;
   background-color: var(--white);
 	overflow: hidden;
