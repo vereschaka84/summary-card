@@ -147,6 +147,7 @@ h1, h2 {
   margin: 0 auto;
   background: linear-gradient(var(--violet-blue), var(--persian-blue));
   color: var(--light-lavender);
+	margin-bottom: 2rem;
 }
 
 .result__rate span {
