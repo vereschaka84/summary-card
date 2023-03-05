@@ -1,0 +1,186 @@
+@import url(https://fonts.googleapis.com/css?family=Hanken+Grotesk:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+
+
+:root {
+  --light-red: hsla(0, 100%, 67%, 0.6);
+  --light-red-back: hsla(0, 100%, 67%, 0.05);
+  --orange-yellow: hsla(39, 100%, 56%, 0.6);
+  --orange-yellow-back: hsla(39, 100%, 56%, 0.05);
+  --green-teal: hsla(166, 100%, 37%, 0.6);
+  --green-teal-back: hsla(166, 100%, 37%, 0.05);
+  --cobalt-blue: hsla(234, 85%, 45%, 0.6);
+  --cobalt-blue-back: hsla(234, 85%, 45%, 0.05);
+
+  --light-slate-blue: hsl(252, 100%, 67%);
+  --light-royal-blue: hsl(241, 81%, 54%);
+
+  --violet-blue: hsla(256, 72%, 46%, 1);
+  --persian-blue: hsla(241, 72%, 46%, 0);
+
+  --white: hsl(0, 0%, 100%);
+  --pale-blue: hsl(221, 100%, 96%);
+  --light-lavender: hsl(241, 100%, 89%);
+  --dark-gray-blue: hsl(224, 30%, 27%);
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "HankenGrotesk Medium", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+	display: flex;
+	align-items: center;
+  justify-content: center;
+	height: 100vh;
+  background-color: var(--pale-blue);
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+.card {
+  width: 1000px;
+  width: 60%;
+  min-height: 45%;
+  border-radius: 15px;
+  background-color: var(--white);
+	overflow: hidden;
+	display: flex;
+  justify-content: center;
+}
+
+.card__result, .card__summary {
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+  padding: 3rem;
+}
+
+.card__result {
+  text-align: center;
+  background: linear-gradient(var(--light-slate-blue), var(--light-royal-blue));
+  color: var(--white);
+  border-radius: 15px;
+}
+
+.summary {
+  display: flex;
+  justify-content: space-between;
+  border-radius: 15px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+  font-size: 1rem;
+  
+}
+
+.summary span {
+  display: flex;
+  align-items: center;
+}
+
+.summary img {
+  margin-right: 10px;
+}
+
+.summary__rate {
+  color: var(--light-lavender);
+  font-size: 1.2rem;
+}
+
+.summary__rate span {
+  color: var(--dark-gray-blue);
+}
+
+.reaction {
+  color: var(--light-red);
+  background-color: var(--light-red-back);
+}
+
+.memory {
+  color: var(--orange-yellow);
+  background-color: var(--orange-yellow-back);
+}
+
+.verbal {
+  color: var(--green-teal);
+  background-color: var(--green-teal-back);
+}
+
+.visual {
+  color: var(--cobalt-blue);
+  background-color: var(--cobalt-blue-back);
+  margin-bottom: 3rem;
+}
+
+.button {
+  background-color: var(--dark-gray-blue);
+  color: var(--white);
+  display: flex;
+  justify-content: center;
+  border: none;
+  padding: 1rem;
+  border-radius: 30px;
+  font-size: inherit;
+  cursor: pointer;
+}
+
+.result__rate {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin: 0 auto;
+  background: linear-gradient(var(--violet-blue), var(--persian-blue));
+  color: var(--light-lavender);
+}
+
+.result__rate span {
+  font-size: 4.5rem;
+  font-weight: 700;
+  color: var(--white);
+}
+
+.card__result p {
+  font-size: 0.95rem;
+  color: var(--light-lavender);
+  letter-spacing: 1px;
+  line-height: 1.2;
+  width: 90%;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 1045px) {
+  .card {
+    flex-direction: column;
+    width: 60%;
+    height: 100vh;
+  }
+
+  .card__result, .card__summary {
+    width: 100%;
+    padding: 2rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .card {
+    width: 80%;
+  }
+}
+
+
+
